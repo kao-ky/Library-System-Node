@@ -1,0 +1,17 @@
+<div class="book-info">
+    <h2>{{this.title}}</h2>
+    <p>By: {{this.author}}</p>
+    <p>Price: CA${{this.price}}</p>
+    {{#if this.availability }}
+        <form action="/books" method="POST">
+            <input type="checkbox" name="checkbox">
+            <button class="borrow-btn" name="bookId" value="{{@index}}">Borrow</button>
+        </form>
+    {{else}}
+        {{#if this.isCheckedByCurrUser}}
+            <span class="loan-by-current-user">Checked out by you</span>
+        {{else}}
+            <span class="loan-by-others">On Loan</span>
+        {{/if}}
+    {{/if}}
+</div>

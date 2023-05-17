@@ -1,0 +1,143 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #3E4444;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    height: 90px;
+    letter-spacing: 1px;
+}
+
+header span {
+    font-size: 20px;
+    margin: auto 0 auto 50px;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header li {
+    list-style: none;
+    margin: auto 30px;
+    font-size: 16px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header span, header a {
+    color: #DBDBDB;
+}
+
+header li a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+/* main section */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 100px 30px 0 30px; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main img {
+    height: 300px;
+    margin: 10px;
+}
+
+main p {
+    line-height: 2.5;
+}
+
+main * {
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #596060;
+    color: #ECEBEB;
+}
+
+button:hover {
+    background-color: #798282;
+    cursor: pointer;
+}
+
+#home-desc {
+    margin: auto 0;
+}
+
+/* Books Page */
+
+#booksDiv input {
+    border: 1px solid gray;
+}
+
+#booksDiv input, #booksDiv select {
+    padding: 10px 30px;
+}
+
+#booksDiv h1 {
+    text-align: center;
+}
+
+#booksDiv {
+    padding-top: 30px;
+    width: 65%;
+}
+
+#filter {
+    margin: 0 auto;
+}
+
+#toolbar {
+    display: flex;
+    margin: 30px auto 30px auto;
+}
+
+.book-info {
+    border: 1px solid black;
+    padding: 15px 30px;
+    width: 88%;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.loan-by-current-user {
+    color: #0051FF;
+}
+
+.loan-by-others {
+    color: red;
+}
+
+.borrow-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#booksDiv span {
+    font-style: italic;
+}
+
+/* Error Page */
+#errPage {
+    text-align: center;
+    line-height: 3.5;
+}
+
+#home-desc, #images, #errPage {
+    padding-top: 150px;
+}

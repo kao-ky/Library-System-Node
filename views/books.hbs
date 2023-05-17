@@ -1,0 +1,27 @@
+<div id="booksDiv">
+    <h1>Books</h1>
+
+    <div id="toolbar">
+
+        <form action="/books/search">
+            <input type="text" placeholder="Search for a book" name="searchText">
+            <button>Search</button>
+        </form>
+
+        <form action="/books" id="filter">
+            <label for="filter-by">Filter results:</label>
+            <select name="filterBy" id="filter-by">
+                <option value="all-books">Show All</option>
+                <option value="available-books">Show Available</option>
+                <option value="my-books">Show My Books</option>
+            </select>
+            <button>Filter</button>
+        </form>
+    </div>
+
+    <div id="all-books-container">
+        {{#each books}}
+            {{> bookInfo}}
+        {{/each}}
+    </div>
+</div>
