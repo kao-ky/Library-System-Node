@@ -1,4 +1,4 @@
-# Library-System-Node
+# Library System - Node.js
 A Node.js academic assignment in college that creates a web application for users to check out books from a library using Express and local persistance with dummy data.
 
 ## Functions
